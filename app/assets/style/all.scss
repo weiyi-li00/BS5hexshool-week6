@@ -1,7 +1,9 @@
+
+@import './utils/variables';
+@import './vendors/bootstraps';
 @import './base/reset';
 @import './base/fontStyle';
-@import './vendors/bootstraps';
-@import './utils/variables';
+@import './utils/mixins';
 @import './layout/header';
 @import './layout/footer';
 @import './pages/index';
