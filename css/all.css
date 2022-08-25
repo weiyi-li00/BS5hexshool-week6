@@ -10390,13 +10390,13 @@ table {
 }
 
 body {
-  background-color: black;
+  background-color: #1c1c1c;
 }
 
-.bcBlock {
+.banner {
   background-image: url("../images/bg_home.jpg");
-  background-position: top;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
