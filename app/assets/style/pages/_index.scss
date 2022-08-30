@@ -1,11 +1,40 @@
 body {
-  background-color: #1c1c1c;
+  background-color: #000;
+  color: #fff;
 }
 .banner {
+  background-color: #1c1c1c;
   background-image: url("../images/bg_home.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
+  @include rwd {
+    background-image: url("../images/bg_home_mobile.jpg");
+  }
+}
+
+.banner-text {
+  padding: 47px 80px;
+  border: 1px solid #fff;
+}
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+.linear {
+  font-size: 56px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #09acf5, #62db54);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.banner-desc {
+  @include key("font-size", 18);
+  @include rwd {
+    @include key("font-size", 10);
+  }
 }

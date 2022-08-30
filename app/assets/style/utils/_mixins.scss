@@ -1,6 +1,19 @@
-@mixin hide-text{
-    white-space: 101%;
-    overflow: hidden;
-    text-wrap: none;
+@mixin hide-text {
+  white-space: 101%;
+  overflow: hidden;
+  text-wrap: none;
+}
+@mixin width-height($W, $h: $W) {
+  width: $W / 0.75 + px;
+  height: $h / 0.75 + px;
+  @content;
+}
+@mixin key($title: null, $val: null) {
+  #{$title}: $val / 0.75 + px;
+  @content;
+}
+@mixin rwd($breakpoints: 481px) {
+  @media (max-width: $breakpoints) {
+    @content;
   }
-  
+}

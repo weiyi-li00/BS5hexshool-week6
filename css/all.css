@@ -624,7 +624,7 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .container, .container-sm {
     max-width: 540px;
   }
@@ -712,7 +712,7 @@ progress {
   width: 16.66667%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .col-sm {
     flex: 1 0 0%;
   }
@@ -1051,7 +1051,7 @@ progress {
   --bs-gutter-y: 3rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .col-sm-auto {
     flex: 0 0 auto;
     width: auto;
@@ -1917,7 +1917,7 @@ progress {
   -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 479.98px) {
   .table-responsive-sm {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -3517,7 +3517,7 @@ fieldset:disabled .btn {
   left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .dropdown-menu-sm-start {
     --bs-position: start;
   }
@@ -4092,7 +4092,7 @@ fieldset:disabled .btn {
   overflow-y: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .navbar-expand-sm {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4476,7 +4476,7 @@ fieldset:disabled .btn {
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .card-group {
     display: flex;
     flex-flow: row wrap;
@@ -5047,7 +5047,7 @@ fieldset:disabled .btn {
   border-left-width: 1px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .list-group-horizontal-sm {
     flex-direction: row;
   }
@@ -5530,7 +5530,7 @@ fieldset:disabled .btn {
   margin: 0.25rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
@@ -5584,7 +5584,7 @@ fieldset:disabled .btn {
   border-radius: 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 479.98px) {
   .modal-fullscreen-sm-down {
     width: 100vw;
     max-width: none;
@@ -6437,7 +6437,7 @@ fieldset:disabled .btn {
   z-index: 1020;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .sticky-sm-top {
     position: sticky;
     top: 0;
@@ -7743,7 +7743,7 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 480px) {
   .float-sm-start {
     float: left !important;
   }
@@ -10276,55 +10276,6 @@ fieldset:disabled .btn {
   }
 }
 
-html, body, div, span, applet, object, iframe, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp, small, .small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, .mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 .btn-gradient {
   background-image: linear-gradient(104deg, #09ACF5, #62DB54);
 }
@@ -10390,15 +10341,53 @@ table {
 }
 
 body {
-  background-color: #1c1c1c;
+  background-color: #000;
+  color: #fff;
 }
 
 .banner {
+  background-color: #1c1c1c;
   background-image: url("../images/bg_home.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
+}
+
+@media (max-width: 481px) {
+  .banner {
+    background-image: url("../images/bg_home_mobile.jpg");
+  }
+}
+
+.banner-text {
+  padding: 47px 80px;
+  border: 1px solid #fff;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.linear {
+  font-size: 56px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #09acf5, #62db54);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.banner-desc {
+  font-size: 24px;
+}
+
+@media (max-width: 481px) {
+  .banner-desc {
+    font-size: 13.33333px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
